@@ -1,12 +1,16 @@
 package com.example.demo;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class SudokoApp extends Application{
-    public void start(Stage stage) throws Exception{
+/**
+ * Class that will run main and the sudoku application
+ */
+public class SudokoApp extends Application {
+    public void start(Stage stage) throws Exception {
         Parent root = (Parent) FXMLLoader.load(getClass().getResource("sudoko.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Sudoko");
