@@ -137,6 +137,8 @@ public class SudokoController {
             for (int j = 0; j < 3; j++) {
                 if (textFields[j + block * 3 + i * SIZE].getText() != "")
                     blockCells[temp] = Integer.parseInt(textFields[j + block * 3 + i * SIZE].getText());
+                else
+                    blockCells[temp] = 0;
                 temp++;
             }
         }
